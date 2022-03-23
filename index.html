@@ -3,13 +3,54 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Crowded Parks</title>
+    <title>Parkle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <section class="header">
+        <h1 class="title">PARKLE</h1>
+    </section>
+
+    <section class="image">
+        <img class="park-image" src="question-mark.jpeg" alt="">
+    </section>
+
+    <section class="results">
+        <section class="current-round">
+            <h2>Which park is this?</h2>
+            <input class="guess" id="guess" placeholder="Enter a guess, e.g. Grand Canyon" onfocus="this.value=''" type="text" id="guess" name="guess">
+            
+            <button type="button" class="guess" id="guessBtn">Guess </button>
+            <p class="outcome"></p>
+
+            <button type="button" class="hintBtn hidden">Need a hint?</button>
+            <p class="hint"></p>
+            
+            
+            <button type="button" class="answerBtn">Show answer</button>
+            <p class="answer"></p>
+        </section>
+
+        <section class="reset">
+
+            <button type="button" class="play-again">Play Again</button>
+
+            <section class="modes"></section>
+                <button type="button" class="hardBtn">Hard Mode</button>
+                <p>Includes all national park units. No hints.</p>
+
+                <button type="button" class="easyBtn">Easy Mode</button>
+                <p>Includes only major national park units. Yes hints.</p>
+            </section>
+        </section>        
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
