@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -17,9 +18,10 @@
     <section class="header">
         <h1 class="title">PARKLE</h1>
     </section>
+       
 
     <section class="image">
-        <img class="park-image" src="question-mark.jpeg" alt="">
+        <img class="park-image" src="spinner.gif" alt="">
     </section>
 
     <section class="results">
@@ -28,14 +30,14 @@
             <input class="guess" id="guess" placeholder="Enter a guess, e.g. Grand Canyon" onfocus="this.value=''" type="text" id="guess" name="guess">
             
             <button type="button" class="guess" id="guessBtn">Guess </button>
-            <p class="outcome"></p>
+            <p class="outcome hidden"></p>
 
             <button type="button" class="hintBtn hidden">Need a hint?</button>
-            <p class="hint"></p>
+            <p class="hint hidden"></p>
             
             
             <button type="button" class="answerBtn">Show answer</button>
-            <p class="answer"></p>
+            <p class="answer hidden"></p>
         </section>
 
         <section class="reset">
