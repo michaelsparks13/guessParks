@@ -148,7 +148,7 @@ const getStateName = (stateCode) => {
 };
 
 async function startGame() {
-    await getParksData(50);
+    await getParksData(500);
     filterParkImages(allParks);
     startEasyMode();
   }
@@ -219,15 +219,8 @@ hintBtn.addEventListener("click", () => {
   hint.innerText = `This park is in ${fullState}`;
 });
 
+
+
 // start game
-
-
 startGame();
 
-/*
-
-/*
-
-left to do:
-3. refactor with evan
-*/

@@ -27,6 +27,49 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+.current-round {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-top: -2%;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    background-color: rgba(211, 211, 211);
+}
+
+button:hover {
+    background-color: rgb(164, 164, 164);
+}
+
+
+#guess {
+    height: 25px;
+}
+
+#guessBtn {
+    margin-bottom: 15%;
+    background-color: #3ac6fe;
+    color: rgba(255, 255, 255, 0.824);
+}
+
+#guessBtn:hover {
+    background-color: #09b1f4;
+}
+
+.outcome {
+    margin-top: -14%;
+}
+
+input:focus::-webkit-input-placeholder 
+{
+    color: transparent;
+}
+
 .incorrect {
     color: red;
 }
@@ -35,15 +78,12 @@ body {
     color: green;
 }
 
-.play-again {
-    display: block;
+.hidden {
+    display: none;
 }
 
-.current-round {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    margin-top: -2%;
+.play-again {
+    display: block;
 }
 
 .answer, .hint, h2 {
@@ -51,7 +91,6 @@ body {
 }
 
 .reset {
-
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -65,34 +104,9 @@ body {
 
 .modes {
     margin-top: 10%;
-}
-
-button {
-    padding: 5px;
-    border: none;
-    margin: 5px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
-}
-
-
-.hidden {
-    display: none;
-}
-
-#guess {
-    height: 25px;
-}
-
-#guessBtn {
-    margin-bottom: 15%;
-}
-
-.outcome {
-    margin-top: -14%;
-}
-
-input:focus::-webkit-input-placeholder 
-{
-    color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
