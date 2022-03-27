@@ -206,6 +206,7 @@ guess.addEventListener("change", () => {
     outcome.classList.add("correct");
     outcome.innerText = "Correct!";
   } else {
+    outcome.classList.remove("correct");
     outcome.classList.add("incorrect");
     outcome.innerText = "Wrong, guess again!";
   }
